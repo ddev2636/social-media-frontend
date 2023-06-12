@@ -28,9 +28,9 @@ const ProfilePage = () => {
 
   useEffect(() => {
     getUser();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [user, userId]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  if (!user) return null;
+  if (!user) return <>no frame</>;
 
   return (
     <Box>

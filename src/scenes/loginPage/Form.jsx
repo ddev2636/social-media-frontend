@@ -80,7 +80,7 @@ const Form = () => {
       setPageType("login");
     }
   };
-  console.log(process.env.BASE_URL);
+
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
       `https://social-media-backend4.onrender.com/auth/login`,
